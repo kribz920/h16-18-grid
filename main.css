@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(210, 159, 252);
+  font-family: 'Comfortaa', cursive;
+  margin: 0;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  
+}
+
+
+header {
+  background-image: url('../img/boz.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+header{
+  grid-column: span 12;
+  text-align: center;
+  }
+
+
+footer{
+  background-color: rgb(110, 113, 255);
+  grid-column: span 12;
+  height: 2em;
+  text-align: center;
+}
+
+.left{
+  grid-column: span 2;
+  background-color: aqua;
+  }
+
+.right{
+  display: grid;
+  background-color: blueviolet;
+  grid-column-start: 3;
+  grid-column: span 10;
+  text-align: left;
+}
+
+.right p{
+  margin: 1em 1em;
+}
+
+.right img{
+  float: right;
+  
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .left{
+    background-color: rgb(240, 78, 78);
+  }
+  .left ul li{
+    font-size: smaller;
+  }
+  .right {
+    background-color: rgb(184, 85, 85);
+  }
+  .right img{
+    float: none;
+  }
+
+
+
+}
