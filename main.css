@@ -62,25 +62,24 @@ footer{
   
 }
 
-
-
 @media only screen and (max-width: 600px) {
   .left{
+    grid-column: span 4;
     background-color: rgb(240, 78, 78);
   }
   .left ul li{
-    font-size: smaller;
     list-style-position: inside;
-    padding-right: 50%;
+    padding-right: 2%;
     margin-right: 1em;
   }
   .right {
+    grid-column: span 8;
     background-color: rgb(184, 85, 85);
   }
   .right img{
     float: none;
   }
 
-
+}
 
 }
