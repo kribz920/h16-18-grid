@@ -36,7 +36,14 @@ footer{
 .left{
   grid-column: span 2;
   background-color: aqua;
-  }
+}
+
+.left ul{
+  padding-left: 1em;
+  margin: 1em 1em 1em 0em;
+  font-size: 0.7rem;
+  list-style-position: inside;
+}
 
 .right{
   display: grid;
@@ -63,6 +70,9 @@ footer{
   }
   .left ul li{
     font-size: smaller;
+    list-style-position: inside;
+    padding-right: 50%;
+    margin-right: 1em;
   }
   .right {
     background-color: rgb(184, 85, 85);
